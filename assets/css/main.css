@@ -1397,7 +1397,7 @@
 		background: #2e3842;
 	}
 
-		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
+		body.is-loading *, body.is-loading *:after {
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
 			-ms-animation: none !important;
@@ -1407,6 +1407,58 @@
 			-ms-transition: none !important;
 			transition: none !important;
 		}
+
+    body.is-loading:before spinner {
+  height: 60px;
+  width: 60px;
+  margin: 94px auto 0 auto;
+  position: relative;
+  -webkit-animation: rotation .6s infinite linear;
+  -moz-animation: rotation .6s infinite linear;
+  -o-animation: rotation .6s infinite linear;
+  animation: rotation .6s infinite linear;
+  border-left: 6px solid rgba(0, 174, 239, .15);
+  border-right: 6px solid rgba(0, 174, 239, .15);
+  border-bottom: 6px solid rgba(0, 174, 239, .15);
+  border-top: 6px solid rgba(0, 174, 239, .8);
+  border-radius: 100%;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+@-moz-keyframes rotation {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(359deg);
+  }
+}
+
+@-o-keyframes rotation {
+  from {
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
 
 	body, input, select, textarea {
 		color: #fff;
@@ -2233,7 +2285,7 @@
 		background-color: transparent;
 		border-radius: 3px;
 		border: 0;
-		box-shadow: inset 0 0 0 2px #fff;
+		box-shadow: inset 0 0 0 0px #fff;
 		color: #fff;
 		cursor: pointer;
 		display: inline-block;
@@ -3626,181 +3678,71 @@
 /* Main */
 
 	#main > header {
-		padding: 12em 0 10em 0 ;
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/fullbanner.jpg");
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/fullbanner.jpg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/fullbanner.jpg");
 		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/fullbanner.jpg");
-		background-attachment: fixed;
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		text-align: center;
-	}
-
-		#main > header h2 {
-			font-size: 1.75em;
-			margin: 0 0 0.5em 0;
-		}
-
-		#main > header p {
-			color: inherit;
-			letter-spacing: 0.225em;
-			text-transform: uppercase;
-			top: 0;
-		}
-
-			#main > header p a {
-				color: inherit;
-			}
-
-		@media screen and (max-width: 1680px) {
-
-			#main > header {
-				padding: 10em 0 8em 0 ;
-			}
-
-		}
-
-		@media screen and (max-width: 1280px) {
-
-			#main > header {
-				padding: 8em 3em 6em 3em ;
-			}
-
-		}
-
-		@media screen and (max-width: 980px) {
-
-			#main > header {
-				padding: 10em 3em 8em 3em ;
-			}
-
-		}
-
-		@media screen and (max-width: 736px) {
-
-			#main > header {
-				padding: 5em 3em 3em 3em ;
-			}
-
-				#main > header h2 {
-					font-size: 1.25em;
-					margin: 0 0 1em 0;
-				}
-
-		}
-
-	body.is-mobile #main > header {
-		background-attachment: scroll;
 	}
 
 /* Television */
 
 	#tv > header {
-		padding: 12em 0 10em 0 ;
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/groupshot.png");
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/groupshot.png");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/groupshot.png");
 		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/groupshot.png");
-		background-attachment: fixed;
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		text-align: center;
-	}
-
-		#tv > header h2 {
-			font-size: 1.75em;
-			margin: 0 0 0.5em 0;
-		}
-
-		#tv > header p {
-			color: inherit;
-			letter-spacing: 0.225em;
-			text-transform: uppercase;
-			top: 0;
-		}
-
-			#tv > header p a {
-				color: inherit;
-			}
-
-		@media screen and (max-width: 1680px) {
-
-			#tv > header {
-				padding: 10em 0 8em 0 ;
-			}
-
-		}
-
-		@media screen and (max-width: 1280px) {
-
-			#tv > header {
-				padding: 8em 3em 6em 3em ;
-			}
-
-		}
-
-		@media screen and (max-width: 980px) {
-
-			#tv > header {
-				padding: 10em 3em 8em 3em ;
-			}
-
-		}
-
-		@media screen and (max-width: 736px) {
-
-			#tv > header {
-				padding: 5em 3em 3em 3em ;
-			}
-
-				#tv > header h2 {
-					font-size: 1.25em;
-					margin: 0 0 1em 0;
-				}
-
-		}
-
-	body.is-mobile #tv > header {
-		background-attachment: scroll;
 	}
 
 /* Morning Shows */
 
-	#morning > header {
-		padding: 12em 0 10em 0 ;
+    #morning > header {
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/morning/bannertop.jpeg");
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/morning/bannertop.jpeg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/morning/bannertop.jpeg");
 		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/morning/bannertop.jpeg");
-		background-attachment: fixed;
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		text-align: center;
 	}
 
-		#morning > header h2 {
+/* Talent */
+
+    #talent > header {
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/talent/hostsback.png");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/talent/hostsback.png");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/talent/hostsback.png");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/talent/hostsback.png");
+	}
+/* Banner ALL */
+
+    #main > header, #tv > header, #morning, #talent > header {
+        padding: 12em 0 10em 0 ;
+    }
+
+    #main > header, #tv > header, #morning, #talent > header {
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+    }
+
+		#main > header h2, #tv > header h2, #morning, #talent > header h2 {
 			font-size: 1.75em;
 			margin: 0 0 0.5em 0;
 		}
 
-		#morning > header p {
+		#main > header p, #tv > header p, #morning, #talent > header p {
 			color: inherit;
 			letter-spacing: 0.225em;
 			text-transform: uppercase;
 			top: 0;
 		}
 
-			#morning > header p a {
+			#main > header p a, #tv > header p a, #morning, #talent > header p a {
 				color: inherit;
 			}
 
 		@media screen and (max-width: 1680px) {
 
-			#morning > header {
+			#main> header, #tv> header, #morning, #talent > header {
 				padding: 10em 0 8em 0 ;
 			}
 
@@ -3808,7 +3750,7 @@
 
 		@media screen and (max-width: 1280px) {
 
-			#morning > header {
+			#main> header, #tv> header, #morning, #talent > header {
 				padding: 8em 3em 6em 3em ;
 			}
 
@@ -3816,7 +3758,7 @@
 
 		@media screen and (max-width: 980px) {
 
-			#morning > header {
+			#main> header, #tv> header, #morning, #talent > header {
 				padding: 10em 3em 8em 3em ;
 			}
 
@@ -3824,18 +3766,18 @@
 
 		@media screen and (max-width: 736px) {
 
-			#morning > header {
+			#main> header, #tv> header, #morning, #talent > header {
 				padding: 5em 3em 3em 3em ;
 			}
 
-				#morning > header h2 {
+				#main> header h2, #tv> header h2, #morning, #talent > header h2 {
 					font-size: 1.25em;
 					margin: 0 0 1em 0;
 				}
 
 		}
 
-	body.is-mobile #morning > header {
+	body.is-mobile #main> header, body.is-mobile #tv> header, body.is-mobile #morning > header, body.is-mobile #talent > header {
 		background-attachment: scroll;
 	}
 
