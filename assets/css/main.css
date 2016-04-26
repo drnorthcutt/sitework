@@ -3676,13 +3676,22 @@ body.is-loading #banner:after {
     background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/theater/theaterback.jpg");
 }
 
-/* Talent */
+/* Furniture */
 
 #pieces > header {
     background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/pieces/pieceback.JPG");
     background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/pieces/pieceback.JPG");
     background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/pieces/pieceback.JPG");
     background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/piecies/pieceback.JPG");
+}
+
+/* Artistic  */
+
+#art > header {
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/art/artback.png");
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/art/artback.png");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/art/artback.png");
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/art/artback.png");
 }
 
 
@@ -3693,6 +3702,7 @@ body.is-loading #banner:after {
 #morning > header,
 #talent > header,
 #pieces > header,
+#art > header,
 #theater > header {
     padding: 12em 0 10em 0;
 }
@@ -3702,6 +3712,7 @@ body.is-loading #banner:after {
 #morning > header,
 #talent > header,
 #pieces > header,
+#art > header,
 #theater > header {
     background-attachment: fixed;
     background-position: center center;
@@ -3715,6 +3726,7 @@ body.is-loading #banner:after {
 #morning > header h2,
 #talent > header h2,
 #pieces > header h2,
+#art > header h2,
 #theater > header h2 {
     font-size: 1.75em;
     margin: 0 0 0.5em 0;
@@ -3725,6 +3737,7 @@ body.is-loading #banner:after {
 #morning > header p,
 #talent > header p,
 #pieces > header p,
+#art > header p,
 #theater > header p,
 {
     color: inherit;
@@ -3738,6 +3751,7 @@ body.is-loading #banner:after {
 #morning > header p a,
 #talent > header p a,
 #pieces > header p a,
+#art > header p a,
 #theather > header p a {
     color: inherit;
 }
@@ -3748,6 +3762,7 @@ body.is-loading #banner:after {
     #morning > header,
     #talent > header,
     #pieces > header,
+    #art > header,
     #theater > header {
         padding: 10em 0 8em 0;
     }
@@ -3759,6 +3774,7 @@ body.is-loading #banner:after {
     #morning > header,
     #talent > header,
     #pieces > header,
+    #art > header,
     #theater > header {
         padding: 8em 3em 6em 3em;
     }
@@ -3770,6 +3786,7 @@ body.is-loading #banner:after {
     #morning > header,
     #talent > header,
     #pieces > header,
+    #art > header,
     #theater > header {
         padding: 10em 3em 8em 3em;
     }
@@ -3781,6 +3798,7 @@ body.is-loading #banner:after {
     #morning > header,
     #talent > header,
     #pieces > header,
+    #art > header,
     #theater > header {
         padding: 5em 3em 3em 3em;
     }
@@ -3789,6 +3807,7 @@ body.is-loading #banner:after {
     #morning > header h2,
     #talent > header h2,
     #pieces > header h2,
+    #art > header h2,
     #theater > header h2 {
         font-size: 1.25em;
         margin: 0 0 1em 0;
@@ -3800,6 +3819,7 @@ body.is-mobile #tv> header,
 body.is-mobile #morning > header,
 body.is-mobile #talent > header,
 body.is-mobile #pieces > header,
+body.is-mobile #art > header,
 body.is-mobile #theater > header {
     background-attachment: scroll;
 }
