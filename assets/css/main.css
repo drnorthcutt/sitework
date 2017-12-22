@@ -1,5 +1,8 @@
 @import url(font-awesome.min.css);
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+/*@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");*/
+
 
 /*
 	Tech Needed
@@ -1346,7 +1349,9 @@ body {
     background: #2e3842;
 }
 
-body.is-loading *,
+
+/*body.is-loading *,*/
+
 body.is-loading *:after {
     -moz-animation: none !important;
     -webkit-animation: none !important;
@@ -1358,7 +1363,7 @@ body.is-loading *:after {
     transition: none !important;
 }
 
-body.is-loading :before spinner {
+body.is-loading:before spinner {
     height: 60px;
     width: 60px;
     margin: 94px auto 0 auto;
@@ -1415,7 +1420,7 @@ input,
 select,
 textarea {
     color: #fff;
-    font-family: "Open Sans", Helvetica, sans-serif;
+    font-family: "Poiret One", Helvetica, sans-serif;
     font-size: 15pt;
     font-weight: 400;
     letter-spacing: 0.075em;
@@ -3630,68 +3635,89 @@ body.is-loading #banner:after {
 /* Main */
 
 #main > header {
-    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/fullbanner.jpg");
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/fullbanner.jpg");
-    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/fullbanner.jpg");
-    background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/fullbanner.jpg");
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/fullbanner.jpg");
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/fullbanner.jpg");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/fullbanner.jpg");
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/fullbanner.jpg");
 }
 
 
 /* Television */
 
 #tv > header {
-    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/bluediv.png");
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/bluediv.png");
-    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/bluediv.png");
-    background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/bluediv.png");
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/bluediv.png");
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/bluediv.png");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/bluediv.png");
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/bluediv.png");
 }
 
 
 /* Morning Shows */
 
 #morning > header {
-    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/morning/sm/mornback.jpg");
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/morning/sm/mornback.jpg");
-    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/morning/sm/mornback.jpg");
-    background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/morning/sm/mornback.jpg");
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../../images/morning/sm/mornback.jpg");
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../../images/morning/sm/mornback.jpg");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../../images/morning/sm/mornback.jpg");
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../../images/morning/sm/mornback.jpg");
 }
 
 
 /* Talent */
 
 #talent > header {
-    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/talent/hostsback.png");
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/talent/hostsback.png");
-    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/talent/hostsback.png");
-    background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/talent/hostsback.png");
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../../images/talent/hostsback.png");
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../../images/talent/hostsback.png");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../../images/talent/hostsback.png");
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../../images/talent/hostsback.png");
 }
 
 
 /* Talent */
 
 #theater > header {
-    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/theater/theaterback.jpg");
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/theater/theaterback.jpg");
-    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/theater/theaterback.jpg");
-    background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/theater/theaterback.jpg");
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../../images/theater/focus/magstop.jpeg");
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../../images/theater/focus/magstop.jpeg");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../../images/theater/focus/magstop.jpeg");
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../../images/theater/focus/magstop.jpeg");
 }
+
 
 /* Furniture */
 
 #pieces > header {
-    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/pieces/pieceback.JPG");
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/pieces/pieceback.JPG");
-    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/pieces/pieceback.JPG");
-    background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/piecies/pieceback.JPG");
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../../images/pieces/pieceback.JPG");
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../../images/pieces/pieceback.JPG");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../../images/pieces/pieceback.JPG");
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../../images/piecies/pieceback.JPG");
 }
+
 
 /* Artistic  */
 
 #art > header {
-    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/art/artback.png");
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/art/artback.png");
-    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/art/artback.png");
-    background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/art/artback.png");
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../../images/art/artback.png");
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../../images/art/artback.png");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../../images/art/artback.png");
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../../images/art/artback.png");
+}
+
+
+/* About  */
+
+#about > header {
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../../images/bradback.jpeg");
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../../images/bradback.jpeg");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../../images/bradback.jpeg");
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../../images/bradback.jpeg");
+}
+
+/* About  */
+
+#word > header {
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../../images/about/abouttop.jpeg");
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../../images/about/abouttop.jpeg");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../../images/about/abouttop.jpeg");
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../../images/about/abouttop.jpeg");
 }
 
 
@@ -3703,6 +3729,8 @@ body.is-loading #banner:after {
 #talent > header,
 #pieces > header,
 #art > header,
+#about > header,
+#word > header,
 #theater > header {
     padding: 12em 0 10em 0;
 }
@@ -3713,11 +3741,20 @@ body.is-loading #banner:after {
 #talent > header,
 #pieces > header,
 #art > header,
+#word > header,
 #theater > header {
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: center;
+}
+
+#about > header {
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100%;
     text-align: center;
 }
 
@@ -3727,6 +3764,8 @@ body.is-loading #banner:after {
 #talent > header h2,
 #pieces > header h2,
 #art > header h2,
+#about > header h2,
+#word > header h2,
 #theater > header h2 {
     font-size: 1.75em;
     margin: 0 0 0.5em 0;
@@ -3738,6 +3777,8 @@ body.is-loading #banner:after {
 #talent > header p,
 #pieces > header p,
 #art > header p,
+#about > header p,
+#word > header p,
 #theater > header p,
 {
     color: inherit;
@@ -3752,6 +3793,8 @@ body.is-loading #banner:after {
 #talent > header p a,
 #pieces > header p a,
 #art > header p a,
+#about > header p a,
+#word > header p a,
 #theather > header p a {
     color: inherit;
 }
@@ -3763,6 +3806,8 @@ body.is-loading #banner:after {
     #talent > header,
     #pieces > header,
     #art > header,
+    #about > header,
+    #word > header,
     #theater > header {
         padding: 10em 0 8em 0;
     }
@@ -3775,6 +3820,8 @@ body.is-loading #banner:after {
     #talent > header,
     #pieces > header,
     #art > header,
+    #about > header,
+    #word > header,
     #theater > header {
         padding: 8em 3em 6em 3em;
     }
@@ -3787,6 +3834,8 @@ body.is-loading #banner:after {
     #talent > header,
     #pieces > header,
     #art > header,
+    #about > header,
+    #word > header,
     #theater > header {
         padding: 10em 3em 8em 3em;
     }
@@ -3799,6 +3848,8 @@ body.is-loading #banner:after {
     #talent > header,
     #pieces > header,
     #art > header,
+    #about > header,
+    #word > header,
     #theater > header {
         padding: 5em 3em 3em 3em;
     }
@@ -3808,6 +3859,8 @@ body.is-loading #banner:after {
     #talent > header h2,
     #pieces > header h2,
     #art > header h2,
+    #about > header h2,
+    #word > header h2
     #theater > header h2 {
         font-size: 1.25em;
         margin: 0 0 1em 0;
@@ -3820,6 +3873,8 @@ body.is-mobile #morning > header,
 body.is-mobile #talent > header,
 body.is-mobile #pieces > header,
 body.is-mobile #art > header,
+body.is-mobile #about > header,
+body.is-mobile #word > header,
 body.is-mobile #theater > header {
     background-attachment: scroll;
 }
